@@ -15,7 +15,6 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 #### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
 #### 2. Создайте форк
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/975023-technomart-24) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
