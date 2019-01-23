@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Марина Супряткина](https://up.htmlacademy.ru/htmlcss/24/user/975023).
-* Наставник: `Александр Кошара`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
