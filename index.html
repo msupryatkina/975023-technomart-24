@@ -7,10 +7,11 @@
 </head>
 
 <body>
-  <header class="main-tehnomart">
-    <section class="find">
+  <header class="page-header">
+    <div class="page-header-top">
       <a class="main-tehnomart-logo">
-        <img src="img/index-logo.svg" width="#" height="#" alt="Логотип Техномарт"></a>
+        <img src="img/index-logo.svg" width="100" height="50" alt="Логотип Техномарт">
+      </a>
 
       <form>
         <div class="search">
@@ -19,13 +20,12 @@
         </div>
       </form>
 
-      <a class="bookmarks" href="bookmarks.html">
-        <img src="img/bookmarks.svg">Закладки:0
-      </a>
-      <a class="basket" href="basket.html"><img src="img/basket.svg">Корзина:0</a>
-      <a class="checkout" href="checkout.html"><img src="img/checkout.svg">Оформить заказ</a>
-
-    </section>
+      <div>
+        <a class="bookmarks" href="bookmarks.html">Закладки:0</a>
+        <a class="basket" href="basket.html">Корзина:0</a>
+        <a class="checkout" href="checkout.html">формить заказ</a>
+      </div>
+    </div>
 
     <nav class="main-navigator">
       <ul class="cite-navigation">
@@ -40,12 +40,12 @@
     </nav>
 
     <section class="header-info">
-      <h1 class="page-title">Интернет-магазин строительных материалов и инструментов</h1>
+      <p class="page-title">Интернет-магазин строительных материалов и инструментов</p>
       <p class="contacts">
         <a class="phone" href="tel:>+78125550555">+7 (812) 555-05-55</a>
         г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
       <p class="modal modal-login">
-        <a class="login" href="login.html"><img src="img/inter.jpg">Вход</a>
+        <a class="login" href="login.html">Вход</a>
         <a class="registration" href="register.html">Регистрация</a>
       </p>
     </section>
@@ -66,23 +66,41 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <h3><a class="company-info" href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a></h3>
+        <h3><a class="company-info" href="company.html">Подробнее о компании</a></h3>
       </section>
       <section class="about-contacts">
-        <h2>КОНТАКТЫ</h2>
+        <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <h3><a class="company-info" href="email.html">ЗАБЛУДИЛИСЬ, НАПИШИТЕ НАМ!</h3>
+        <h3><a class="company-info" href="email.html">Заблудились, напишите нам!</h3>
       </section>
     </section>
+    <div class="popup visually-hidden">
+      <form class="contact-email" method="POST" action="https://echo.htmlacademy.ru">
+        <label for="popup-name"> Ваше имя:</label>
+        <br>
+        <input type="text" name="popup-name" id="popup-name">
+        <br>
+        <label for="email">Ваш e-mail:</label>
+        <br>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="letter">Текст письма:</label>
+        <br>
+        <textarea rows="5" id="letter"></textarea>
+        <br>
+        <input type="submit"value="Отправить">
+      </form>
+    </div>
+    <div class="map visually-hidden"></div>
   </main>
 
   <footer>
-    <a src="img/index-logo.svg" width="#" height="#" alt="Логотип Техномарт"></a>
+    <a href="img/index-logo.svg" width="100" height="50" alt="Логотип Техномарт"></a>
     <section class="adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </section>
-    <nav class="footer-nav">
+    <section class="footer-nav">
       <ul>
         <li><a href="company.html">Компания</a></li>
         <li><a href="news.html">Новости</a></li>
@@ -96,7 +114,7 @@
         <li><a href="tool.html">Инструмент</a></li>
         <li><a href="special_offers.html">Спецпредложения</a></li>
       </ul>
-    </nav>
+    </section>
     <section class="footer-social">
       <p>2010-2017 Компания Техномарт
         Все права защищены</p>
@@ -109,7 +127,7 @@
 
       <p class="footer copyright">
         <b>Обратная связь:</b>
-        <a class="button" href="mail@htmlakademy.ru">Обратная связь</a>
+        <a class="button" href="mail@htmlacademy.ru">Обратная связь</a>
 
         <b>Разработано-</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
