@@ -75,20 +75,20 @@
           <legend>Производители:</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
-              <label for="filter-BOSCH">BOSCH</label></li>
+              <input class="visually-hidden filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">bosch</label></li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
-              <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label></li>
+              <input class="visually-hidden filter-input" type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">interskol</label></li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
-              <label for="filter-MAKITA">MAKITA</label></li>
+              <input class="visually-hidden filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">makita</label></li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="DEWALT" id="filter-DEWALT">
-              <label for="filter-DEWALT">DEWALT</label></li>
+              <input class="visually-hidden filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">dewalt</label></li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="HITACHI" id="filter-HITACHI">
-              <label for="filter-HITACHI">HITACHI</label></li>
+              <input class="visually-hidden filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">hitachi</label></li>
           </ul>
         </fieldset>
 
@@ -110,11 +110,6 @@
     </section>
 
     <section class="catalog">
-      <div class="popup-cart visually-hidden">
-        <span>Товар добавлен в корзину</span>
-        <a class="popup-cart" href="#">Оформить заказ</a>
-        <a class="popup-cart" href="#">Продолжить покупкки</a> 
-      </div>
       <ul class="catalog-list">
         <li class="catalog-item">
           <h3>
@@ -124,8 +119,10 @@
           </h3>
           <p class="old-price">22500 Р.</p>
           <a class="button-new-price" href="#">15500 Р.</a>
-          <a class="button-buy-hidden" href="#">Купить</a>
-          <a class="button-bookmark-hidden" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -136,8 +133,10 @@
           </h3>
           <p class="old-price">30500 Р.</p>
           <a class="button-new-price" href="#">25500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -145,8 +144,10 @@
             <a href="catalog-item.html">Перфоратор BOSCH BFG 2000</a>
           </h3>
           <a class="button-new-price" href="#">12500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -157,8 +158,10 @@
           </h3>
           <p class="old-price">22500 Р.</p>
           <a class="button-new-price" href="#">15500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -169,8 +172,11 @@
           </h3>
           <p class="old-price">30500 Р.</p>
           <a class="button-new-price" href="#">25500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
+        </li>
 
         <li class="catalog-item">
           <h3>
@@ -179,8 +185,10 @@
             </a>
           </h3>
           <a class="button-new-price" href="#">12500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -191,8 +199,10 @@
           </h3>
           <p class="old-price">22500 Р.</p>
           <a class="button-new-price" href="#">15500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
 
         <li class="catalog-item">
@@ -203,8 +213,11 @@
           </h3>
           <p class="old-price">30500 Р.</p>
           <a class="button-new-price" href="#">25500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
+        </li>
 
         <li class="catalog-item">
           <h3>
@@ -213,8 +226,10 @@
             </a>
           </h3>
           <a class="button-new-price" href="#">12500 Р.</a>
-          <a class="button-buy" href="#">Купить</a>
-          <a class="button-bookmark" href="#">В Закладки</a>
+          <div class="button-container">
+            <a class="button-buy" href="#">Купить</a>
+            <a class="button-bookmark" href="#">В Закладки</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -260,6 +275,12 @@
     </section>
 
   </footer>
+
+  <div class="popup-cart visually-hidden">
+    <span>Товар добавлен в корзину</span>
+    <a class="popup-cart" href="#">Оформить заказ</a>
+    <a class="popup-cart" href="#">Продолжить покупкки</a>
+  </div>
 
 </body>
 

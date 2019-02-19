@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт"</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
+    <div class="page-header-wrapper">
     <div class="page-header-top">
       <a class="main-tehnomart-logo">
         <img src="img/index-logo.svg" width="100" height="50" alt="Логотип Техномарт">
@@ -26,18 +28,7 @@
         <a class="checkout" href="checkout.html">формить заказ</a>
       </div>
     </div>
-
-    <nav class="main-navigator">
-      <ul class="cite-navigation">
-        <li><a href="main.html">Главная</a></li>
-        <li><a href="company.html">Компания</a> </li>
-        <li><a href="catalog.html">Каталог</a> </li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="special_offers.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
+    </div>
 
     <section class="header-info">
       <p class="page-title">Интернет-магазин строительных материалов и инструментов</p>
@@ -49,9 +40,21 @@
         <a class="registration" href="register.html">Регистрация</a>
       </p>
     </section>
+
+    <nav class="main-navigator">
+        <ul class="site-navigation">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="company.html">Компания</a> </li>
+          <li><a href="catalog.html">Каталог</a> </li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special_offers.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
   </header>
 
-  <main class="conteiner">
+  <main class="container">
     <section class="about">
       <section class="about-company">
 
@@ -75,24 +78,6 @@
         <h3><a class="company-info" href="email.html">Заблудились, напишите нам!</h3>
       </section>
     </section>
-    <div class="popup visually-hidden">
-      <form class="contact-email" method="POST" action="https://echo.htmlacademy.ru">
-        <label for="popup-name"> Ваше имя:</label>
-        <br>
-        <input type="text" name="popup-name" id="popup-name">
-        <br>
-        <label for="email">Ваш e-mail:</label>
-        <br>
-        <input type="text" name="email" id="email">
-        <br>
-        <label for="letter">Текст письма:</label>
-        <br>
-        <textarea rows="5" id="letter"></textarea>
-        <br>
-        <input type="submit"value="Отправить">
-      </form>
-    </div>
-    <div class="map visually-hidden"></div>
   </main>
 
   <footer>
@@ -118,7 +103,6 @@
     <section class="footer-social">
       <p>2010-2017 Компания Техномарт
         Все права защищены</p>
-
       <ul class="footer-social">
         <il><a class="social-button" href="#">Вконтакте</a></il>
         <il><a class="social-button" href="#">Фейсбук</a></il>
@@ -133,8 +117,20 @@
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </section>
-
   </footer>
+
+  <div class="popup visually-hidden">
+    <form class="contact-email" method="POST" action="https://echo.htmlacademy.ru">
+      <label for="popup-name"> Ваше имя:</label>
+      <input type="text" name="popup-name" id="popup-name">
+      <label for="email">Ваш e-mail:</label>
+      <input type="text" name="email" id="email">
+      <label for="letter">Текст письма:</label>
+      <input type="text" name="letter">
+      <button>Отправить</button>
+    </form>
+  </div>
+  <div class="popup map visually-hidden">map</div>
 
 </body>
 
