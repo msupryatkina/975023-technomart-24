@@ -1,80 +1,268 @@
 html,
 body {
-  min-width: 1200px;
-  min-height: 41px;
+
 }
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  width: 1200px;
-  height: 320px;
-  background-color: #f4f7f9;
-  align-items: center;
-  width: 100%;
+  display:flex;
+  flex-direction:column;
+  background:grey;
 }
-.page-header-wrapper {
-  
-  min-width:940px;
-}
-.page-header-top {
-  display: flex;
-  flex-direction: row;
-  min-width: 940px;
-  min-height: 42px;
-  background-color: #293449;
-  margin-bottom: 45px;  
-  }
 
-.main-tehnomart-logo {
+
+.page-header * {
+ 
+}
+
+.page-header-top {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  background-color: #293449;
+}
+
+.page-header-top .container {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  min-width:940px;
+  height:42px;
+  
+ }
+
+.page-header-top .main-tehnomart-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center; 
   width: 220px;
-  height: 47px;
+  height: 45px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+ 
+    
+}
+
+.page-header-top .search {
+  width:260px;
+  flex-grow:1;
+}
+
+.page-header-top .cart {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
   
-  }
+  align-items:center;
+  margin-left: 10px;
   
-  .bookmarks {
+  
+}
+.page-header-top .cart a{
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page-header-top .cart .bookmarks{
+  background-image:url("../img/icon-bookmark.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  padding: 20px;
+}
+
+.page-header-top .cart .basket{
+  background-image:url("../img/icon-cart.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  padding: 20px;
+}
+
+
+.page-header-top .cart .checkout {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+
+
+.header-info {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  height:158px;
+  background:#f4f7f9;
+  
+}
+
+.header-info * {
 
 }
+.header-info .container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding-top:46px;
+  min-width:940px;  
+ 
+}
+
+.header-info .page-title{
+  flex:1;
+  max-width: 196px;
+  height: 60px;
+ 
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+
+  margin-left:53px;
   
+
+}
+.header-info .contacts {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  margin-left:71px;  
+
+}
+
+.header-info .phone {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+  text-decoration:none;
+ 
+  height: 45px;
+  border: solid 3px #ffffff;
+  
+
+}
+
+.header-info .phone img {
+  flex-basis:20px;
+  margin-left:10px;
+}
+.header-info .phone p{
+  margin-left:50px;
+}
+
+
+.header-info span {
+  
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
+}
+.header-info .modal-login {
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
+
+}
+
+.header-info .modal-login a {
+  background:white;
+  height:45px;
+  margin-left:10px;
+  padding-left:5px;
+  padding-right:5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black);
+  text-decoration:none;
+}
+
+.header-info .modal-login .login {
+  background-image:url("../img/icon-login.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  width:105px;
+}
+
 .main-navigator {
-  min-width: 940px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  
+  background:#f4f7f9;
+}
+
+.main-navigator .container {
+  
+}
+
+.main-navigator .site-navigation {
+  width:940px;
+  padding:0px;
+  margin:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  
+  list-style:none;
   height: 60px;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
-  margin-left: 130px;
-  margin-right: 130px;
- }
-
- .site-navigation {
-  display:flex;
-  flex-direction: row; 
-  justify-content: space-between;
-  margin:  0;
-  padding: 20px;
-  list-style: none;
-  min-height: 70px;
  
- }
+  }  
 
- .site-navigation a {  
-
-    font-family: Cuprum;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    text-decoration: none;
-    color: #ffffff;  
- }
-
- .header-info {
-   display:flex;
-   flex-direction: row;
-  border: 2px solid red;
- }
+.site-navigation a {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration:none;
+}
