@@ -1,20 +1,25 @@
 @font-face {
     font-family:Cuprum;
-    src: url(../fonts/Cuprum/Cuprum-Bold.ttf);
-    font-weight: bold;
+    src: url(../fonts/web/cuprum.woff2) format(woff2),
+         url(../fonts/web/cuprum.woff) format(woff); 
+    font-weight: normal;
+    font-style: normal;
   }
 @font-face {
     font-family:Cuprum;
-    src: url(../fonts/Cuprum/Cuprum-Italic.ttf);
+    src: url(../fonts/web/cuprumitalic.woff2) format(woff2),
+         url(../fonts/web/cuprumitalic.woff) format(woff);
     font-weight: italic;
+    font-style: italic;
   }
 
 @font-face {
     font-family:Cuprum;
-    src: url(../fonts/Cuprum/Cuprum-Regular.ttf);
-    }
-
-
+    src: url(../fonts/web/cuprumbold.woff2) format(woff2),
+         url(../fonts/web/cuprumbold.woff) format(woff);
+    font-weight: bold;
+    font-style: bold;
+        }
 
 html,
 body {
@@ -22,6 +27,26 @@ font-family: Cuprum;
 
 }
 
+.page-header{
+  background:lightslategray;
+}
+.page-header-top{
+  background:lightblue;
+ }
+
+.page-header-top .container {
+  background:coral;
+  margin: 0 auto ;
+  width:940px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+
+}
+
+.page-header-top .container .search {
+  flex:2;
+}
 
 
 
