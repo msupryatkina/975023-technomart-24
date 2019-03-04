@@ -46,18 +46,14 @@
   }
   
 
-html,
 body {
-margin: 0;
-padding: 0;
+ margin: 0;
+ padding: 0;
 
-font-family: "Cuprum", PTSans, Arial;
-font-size: 17px;
-line-height: 17px;
-font-weight: 700;
-
-background-color: white;
-
+ font-family: "Cuprum", "PTSans", "Arial", sans-serif ;
+ font-size: 17px;
+ line-height: 17px;
+ font-weight: 700;
 }
 
 a {
@@ -70,57 +66,64 @@ a {
   color: #ffffff;
 }
 .main-tehnomart-logo:hover {
- background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 .main-tehnomart-logo:focus {
- background-color: #ba2732;
+  background-color: #ba2732;
 }
-form .search:hover {
- background-color: #212a3a;
+.search {
+  font-size: 17px;
+  line-height: 18px;
 }
-form .search:focus {
- background-color: #293449;
+
+.search:hover {
+  background-color: #212a3a;
+}
+.search:focus {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 17px;
+  line-height: 18px;
 }
  
 /**form .search: курсор?*/
+
 .cart .checkout {
- background-color: #63a63e;
+  background-color: #63a63e;
+ }
+.cart .checkout:hover{
+  background-color: #5fbb2d;
  }
 
- .cart .checkout:hover{
- background-color: #5fbb2d;
- }
-
- .cart .checkout:focus{
+.cart .checkout:focus{
   background-color: #518534;
 }
-
 .cart .bookmarks:hover,
 .cart .basket:hover{
- background-color: #212a3a;
+  background-color: #212a3a;
 }
 
 .cart .bookmarks:focus,
 .cart .basket:focus{
- background-color: #161d29;
+  background-color: #161d29;
 }
 
 .page-title {
- font-style: italic;
- font-size: 16px;
- line-height: 23px;
- color: #ee3643;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .contacts .phone {
- font-size: 21px;
- line-height: 21px;
- color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
 }
 .contacts span {
- font-size: 14px;
- line-height: 24px;
- color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
 }
 .modal-login a{
   font-size: 21px;
@@ -128,94 +131,94 @@ form .search:focus {
   color: #000000; 
   }
 .modal-login .login:hover{
- color: #ee3643;
+  color: #ee3643;
 }
 .modal-login .login:focus{
- color: rgba(0,0,0,0.3)   
+  color: rgba(0,0,0,0.3)   
 }
 .modal-login .registration:hover{
- color: #ee3643;
+  color: #ee3643;
 }
 .modal-login .registration:focus{
-color: rgba(0,0,0,0.3) 
+  color: rgba(0,0,0,0.3) 
 }  
 
 .site-navigation {
   list-style: none;
  }
- .site-navigation a {
+.site-navigation a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
  }
- .site-navigation a:hover,
- .site-navigation a:focus {
-   background-color: #293449;
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
  }
- .about-company h2 {
- font-size: 30px;
- line-height: 30px;
+.about-company h2 {
+  font-size: 30px;
+  line-height: 30px;
   }
-  .about-company p {
-  font-family: PTSans;
+.about-company p {
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+ }
+.about-company .delivery {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
   }
-  .about-company .delivery {
-   font-size: 18px;
-   line-height: 20px;
-   list-style: none;
-  }
- .company-info {
+.company-info {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
  }
- .about-contacts h2 {
-   font-size: 30px;
-   line-height: 30px; 
+.about-contacts h2 {
+  font-size: 30px;
+  line-height: 30px; 
  }
- .about-contacts p {
-      font-family: PTSans;
-      font-size: 13px;
-      line-height: 24px;
-      text-align: left;
+.about-contacts p {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
  }
- .adress {
-    font-size: 18px;
-    line-height: 24px;
-    color: #f1f5f7;
+.adress {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
  }
- .adress a {
-     color: #f1f5f7;
+.adress a {
+  color: #f1f5f7;
  }
- .footer-nav-white,
- .footer-nav-gold {
+.footer-nav-white,
+.footer-nav-gold {
   list-style: none;
  }
- .footer-nav-white a{
-   font-size: 18px;
-   line-height: 24px;
-   color: #f1f5f7;
+.footer-nav-white a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
  }
- .footer-nav-gold a{
-   font-size: 18px;
-   line-height: 24px;
-   color: #ffd180; 
+.footer-nav-gold a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180; 
  }
 .footer-social p {
-     font-size: 16px;
-     line-height: 18px;
-     color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
 .footer-copyright b{
-     font-size: 16px;
-     line-height: 18px;
-     color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
 .footer-copyright a{
-     font-size: 16px;
-     line-height: 18px;
-     color:#ffd180;
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffd180;
 }
