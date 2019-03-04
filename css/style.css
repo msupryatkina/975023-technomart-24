@@ -7,16 +7,16 @@
   }
   @font-face {
     font-family:Cuprum;
-    src: url("../fonts/cuprumbolditalic.woff2") format(woff2),
-         url("../fonts/cuprumbolditalic.woff") format(woff);
+    src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+         url("../fonts/cuprumbolditalic.woff") format("woff");
     font-weight: bold;
     font-style: italic;
   }
 
 @font-face {
     font-family:Cuprum;
-    src: url("../fonts/cuprumitalic.woff2") format(woff2),
-         url("../fonts/cuprumitalic.woff") format(woff);
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+         url("../fonts/cuprumitalic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
   }
@@ -48,15 +48,174 @@
 
 html,
 body {
+margin: 0;
+padding: 0;
 
-font-family: "Cuprum", PTSans, Open Sans, sans-serif;
+font-family: "Cuprum", PTSans, Arial;
 font-size: 17px;
 line-height: 17px;
 font-weight: 700;
-color: #ffffff;
-text-transform: uppercase;
+
+background-color: white;
 
 }
 
+a {
+ text-decoration: none; 
+}
 
+.page-header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.main-tehnomart-logo:hover {
+ background-color: #ca2c37;
+}
+.main-tehnomart-logo:focus {
+ background-color: #ba2732;
+}
+form .search:hover {
+ background-color: #212a3a;
+}
+form .search:focus {
+ background-color: #293449;
+}
+ 
+/**form .search: курсор?*/
+.cart .checkout {
+ background-color: #63a63e;
+ }
 
+ .cart .checkout:hover{
+ background-color: #5fbb2d;
+ }
+
+ .cart .checkout:focus{
+  background-color: #518534;
+}
+
+.cart .bookmarks:hover,
+.cart .basket:hover{
+ background-color: #212a3a;
+}
+
+.cart .bookmarks:focus,
+.cart .basket:focus{
+ background-color: #161d29;
+}
+
+.page-title {
+ font-style: italic;
+ font-size: 16px;
+ line-height: 23px;
+ color: #ee3643;
+}
+
+.contacts .phone {
+ font-size: 21px;
+ line-height: 21px;
+ color: #ee3643;
+}
+.contacts span {
+ font-size: 14px;
+ line-height: 24px;
+ color: #32425c;
+}
+.modal-login a{
+  font-size: 21px;
+  line-height: 21px;  
+  color: #000000; 
+  }
+.modal-login .login:hover{
+ color: #ee3643;
+}
+.modal-login .login:focus{
+ color: rgba(0,0,0,0.3)   
+}
+.modal-login .registration:hover{
+ color: #ee3643;
+}
+.modal-login .registration:focus{
+color: rgba(0,0,0,0.3) 
+}  
+
+.site-navigation {
+  list-style: none;
+ }
+ .site-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+ }
+ .site-navigation a:hover,
+ .site-navigation a:focus {
+   background-color: #293449;
+ }
+ .about-company h2 {
+ font-size: 30px;
+ line-height: 30px;
+  }
+  .about-company p {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 24px;
+  }
+  .about-company .delivery {
+   font-size: 18px;
+   line-height: 20px;
+   list-style: none;
+  }
+ .company-info {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+ }
+ .about-contacts h2 {
+   font-size: 30px;
+   line-height: 30px; 
+ }
+ .about-contacts p {
+      font-family: PTSans;
+      font-size: 13px;
+      line-height: 24px;
+      text-align: left;
+ }
+ .adress {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f5f7;
+ }
+ .adress a {
+     color: #f1f5f7;
+ }
+ .footer-nav-white,
+ .footer-nav-gold {
+  list-style: none;
+ }
+ .footer-nav-white a{
+   font-size: 18px;
+   line-height: 24px;
+   color: #f1f5f7;
+ }
+ .footer-nav-gold a{
+   font-size: 18px;
+   line-height: 24px;
+   color: #ffd180; 
+ }
+.footer-social p {
+     font-size: 16px;
+     line-height: 18px;
+     color: #ffffff;
+}
+.footer-copyright b{
+     font-size: 16px;
+     line-height: 18px;
+     color: #ffffff;
+}
+.footer-copyright a{
+     font-size: 16px;
+     line-height: 18px;
+     color:#ffd180;
+}
