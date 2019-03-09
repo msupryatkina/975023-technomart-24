@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "PTSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none; 
+ }
+
+.page-header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.main-tehnomart-logo {
+  background-color: #ee3643;
+}
+
+.main-tehnomart-logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-tehnomart-logo:focus {
+  background-color: #ba2732;
+}
+
+.search {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:focus {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.cart .checkout {
+  background-color: #63a63e;
+}
+.cart .basket {
+  background-color: #ee3643;
+}
+
+.cart .checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.cart .checkout:focus {
+  background-color: #518534;
+}
+
+.cart .bookmarks:hover,
+.cart .basket:hover {
+  background-color: #212a3a;
+}
+
+.cart .bookmarks:focus,
+.cart .basket:focus {
+  background-color: #161d29;
+}

@@ -1,12 +1,12 @@
 @font-face {
-    font-family:Cuprum;
+    font-family: Cuprum;
     src: url("../fonts/cuprum.woff2") format("woff2"),
          url("../fonts/cuprum.woff") format("woff"); 
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family:Cuprum;
+    font-family: Cuprum;
     src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
          url("../fonts/cuprumbolditalic.woff") format("woff");
     font-weight: bold;
@@ -14,7 +14,7 @@
   }
 
 @font-face {
-    font-family:Cuprum;
+    font-family: Cuprum;
     src: url("../fonts/cuprumitalic.woff2") format("woff2"),
          url("../fonts/cuprumitalic.woff") format("woff");
     font-weight: normal;
@@ -22,7 +22,7 @@
   }
 
 @font-face {
-    font-family:Cuprum;
+    font-family: Cuprum;
     src: url("../fonts/cuprumbold.woff2") format("woff2"),
          url("../fonts/cuprumbold.woff") format("woff");
     font-weight: bold;
@@ -30,7 +30,7 @@
         } 
 
 @font-face {
-    font-family:PTSans;
+    font-family: PTSans;
     src: url("../fonts/ptsans.woff2") format("woff2"),
          url("../fonts/ptsans.woff") format("woff");
     font-weight: normal;
@@ -38,7 +38,7 @@
   }
 
 @font-face {
-    font-family:PTSans;
+    font-family: PTSans;
     src: url("../fonts/ptsansbold.woff2") format("woff2"),
          url("../fonts/ptsansbold.woff") format("woff");
     font-weight: bold;
@@ -50,10 +50,10 @@ body {
  margin: 0;
  padding: 0;
 
- font-family: "Cuprum", "PTSans", "Arial", sans-serif ;
+ font-family: "Cuprum", "PTSans", "Arial", sans-serif;
  font-size: 17px;
- line-height: 17px;
- font-weight: 700;
+ line-height: 18px;
+ font-weight: 500;
 }
 
 a {
@@ -65,12 +65,19 @@ a {
   line-height: 18px;
   color: #ffffff;
 }
+
+.main-tehnomart-logo {
+  background-color: #ee3643;
+}
+
 .main-tehnomart-logo:hover {
   background-color: #ca2c37;
 }
+
 .main-tehnomart-logo:focus {
   background-color: #ba2732;
 }
+
 .search {
   font-size: 17px;
   line-height: 18px;
@@ -86,25 +93,29 @@ a {
   line-height: 18px;
 }
  
-/**form .search: курсор?*/
-
 .cart .checkout {
   background-color: #63a63e;
- }
-.cart .checkout:hover{
-  background-color: #5fbb2d;
- }
+}
 
-.cart .checkout:focus{
+.cart .basket-full {
+  background-color: #ee3643;
+}
+
+.cart .checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.cart .checkout:focus {
   background-color: #518534;
 }
+
 .cart .bookmarks:hover,
-.cart .basket:hover{
+.cart .basket:hover {
   background-color: #212a3a;
 }
 
 .cart .bookmarks:focus,
-.cart .basket:focus{
+.cart .basket:focus {
   background-color: #161d29;
 }
 
@@ -120,105 +131,348 @@ a {
   line-height: 21px;
   color: #ee3643;
 }
+
 .contacts span {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
-.modal-login a{
+.account .account {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.account .account:focus {
+  color: rgba(0,0,0,0.3);
+}
+
+.account .my-orders,
+.account .personal-area {
+  text-decoration: underline;
+  color: #32425c
+}
+.account .my-orders:hover {
+  color: #ee3643;
+}
+
+.account .personal-area:hover {
+  color: #ee3643;
+}
+
+.modal-login a {
   font-size: 21px;
   line-height: 21px;  
   color: #000000; 
-  }
-.modal-login .login:hover{
+}
+
+.modal-login .login:hover {
   color: #ee3643;
 }
-.modal-login .login:focus{
+
+.modal-login .login:focus {
   color: rgba(0,0,0,0.3)   
 }
-.modal-login .registration:hover{
+
+.modal-login .registration:hover {
   color: #ee3643;
 }
-.modal-login .registration:focus{
+
+.modal-login .registration:focus {
   color: rgba(0,0,0,0.3) 
 }  
 
 .site-navigation {
   list-style: none;
- }
+}
+
 .site-navigation a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
- }
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #293449;
- }
+}
+ 
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+.page-title-catalog {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
 .about-company h2 {
   font-size: 30px;
   line-height: 30px;
-  }
+}
+
 .about-company p {
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
- }
+}
+
 .about-company .delivery {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
-  }
+}
+
 .company-info {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
- }
+}
+
 .about-contacts h2 {
   font-size: 30px;
   line-height: 30px; 
- }
+}
+
 .about-contacts p {
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
- }
+}
+
 .adress {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
- }
+}
+
 .adress a {
   color: #f1f5f7;
- }
+}
+ 
 .footer-nav-white,
 .footer-nav-gold {
   list-style: none;
- }
-.footer-nav-white a{
+}
+
+.footer-nav-white a {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
- }
-.footer-nav-gold a{
+}
+
+.footer-nav-gold a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180; 
- }
+}
+
 .footer-social p {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
-.footer-copyright b{
+
+.footer-copyright b {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
-.footer-copyright a{
+
+.footer-copyright a {
   font-size: 16px;
   line-height: 18px;
   color:#ffd180;
 }
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PTSans" ,"Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+/** доработать изображение при наведении и блокировки а 
+так же цвет при блокировки**/
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: rgba(0,0,0,0.4);
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog a {
+  text-decoration: none;
+  width: 700px;
+  margin: 20px auto;
+}
+
+.catalog-items .row {
+  margin-left: -20px;
+}
+
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-items {
+  font-size: 0;
+}
+
+.catalog-item {
+  font-size: 16px;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.catalog-item .button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .button-container .button-buy,
+.catalog-item .button-container .button-bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .button-container .button-bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .button-container {
+  display: none;
+}
+
+.catalog-item:hover .button-container {
+  display: block;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+   max-width: 100%;
+}
+
+.catalog-item .title {
+  font-family: "PTSsans" ,"Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .old-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.catalog-item .new-price {
+  font-family: "PTSsans" ,"Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #ee3643;
+  border-radius: 3px;
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+}
+
+.catalog-item .new-price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
