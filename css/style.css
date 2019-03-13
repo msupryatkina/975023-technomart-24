@@ -485,6 +485,7 @@ a {
 .page-header {
   display: flex;
   flex-direction: column;
+  min-height: 320px;
  
     /**бордер временно для сетки**/
   border: red 1px solid;
@@ -530,20 +531,20 @@ a {
   margin-left: 10px;
 }
 
-.page-header-top .cart .bookmarks{
+.page-header-top .cart .bookmarks {
   background-image:url("../img/icon-bookmark.svg");
   background-repeat:no-repeat;
   background-position: center left;
-  padding: 20px;
+  padding: 12px 0 12px 45px;
+  width: 105px;
 }
 
-.page-header-top .cart .basket{
+.page-header-top .cart .basket {
   background-image:url("../img/icon-cart.svg");
   background-repeat:no-repeat;
   background-position: center left;
   padding: 20px;
 }
-
 
 .page-header-top .cart .basket-full {
   display:flex;
