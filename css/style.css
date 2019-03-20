@@ -87,7 +87,9 @@ a {
 
 .search:hover {
   background-color: #212a3a;
+  opacity: 0.5;
 }
+
 .search:focus {
   background-color: #ffffff;
   color: #000000;
@@ -485,6 +487,10 @@ a {
   border: 20px solid white;
   border-left-color: #ee3643;
 }
+.img {
+  max-width: 100%;
+  height: auto;
+}
 /**сетки**/
 .page-header {
   min-height: 320px;
@@ -500,6 +506,7 @@ a {
   display:flex;
   flex-direction:row;
 }
+
 .page-header-top {
   background-color: #293449;
 }
@@ -510,19 +517,17 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
+  height: 42px;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   box-sizing: border-box;
-
-
-
 }
 
 .main-tehnomart-logo {
   display:flex; 
   width: 220px;
-  height: 45px;
+  height: 42px;
   box-shadow: 0px 5px 1px 0 #b52933;
 }
 
@@ -531,13 +536,13 @@ a {
 }
 
 .page-header-top .search {
-  width:240px;
+  display: flex;
+  width:270px;
   background-color: #293449;
-  padding-top: 10px;
 }
 
 .page-header-top input {
-  height: 32px;
+  height: 42px;
   width: 230px;
   border: none;
   padding: 5px 0 5px 40px;
@@ -547,53 +552,70 @@ a {
 }
 
 .page-header-top label {
-  margin-left: 40px;
-  position: absolute;
+  
+  /*position: absolute;
+  top: 12px;
+  left: 17px;
+  z-index: 20;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  background: url("../img/icon-search.svg") no-repeat;
+  background-position: -106px -1px;
+  cursor: pointer;
+
+  /*position: absolute;
   top: 11px;
-  left: 0;
+  left: 0;*/
 }
 
 .page-header-top .cart {
   display: flex;
-  width: 460px;
+  width: 470px;
   justify-content: space-between;
   margin-left: 10px;
 }
+.cart a {
+  display: block;
+}
 
-.page-header-top .cart .bookmarks {
+.cart .bookmarks {
   background-image:url("../img/icon-bookmark.svg");
   background-repeat:no-repeat;
   background-position: center left;
   padding-left: 30px;
-  padding-top: 13px;
+  padding-top: 12px;
+  width: 150px;
 }
 
-.page-header-top .cart .basket {
+ .cart .basket {
   background-image:url("../img/icon-cart.svg");
   background-repeat:no-repeat;
   background-position: center left;
   padding-left: 30px;
-  padding-top: 13px;
+  padding-top: 12px;
+  width: 150px;
 }
-/**доделать не получается схлопнуть цвета**/
-.page-header-top .cart .basket-full {
-  margin: 0;
+
+ .cart .basket-full {
   background-image:url("../img/icon-cart.svg");
   background-repeat:no-repeat;
-  background-position: center left;
+  background-position: left;
   padding-left: 30px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 13px;
+  padding-top: 12px;
+  width: 150px;
   background-color: #ee3643;
+  
+
 }
 
-.page-header-top .cart .checkout {
+ .cart .checkout {
   padding-left: 30px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-right: 13px;
   background-color: #63a63e;
+  width: 150px;
 }
   
 .header-info {
@@ -618,36 +640,61 @@ a {
   padding-left: 49px;
   padding-bottom: 39px;
   margin-right: 21px;
+  display: block;
+  height: 60px;
 }
 
 .header-info .contacts {
   margin-left: 11px;  
 }
-/*нужно оттолкнуть картинку телефон от бордера*/
+
 .header-info .phone {
   display:flex;
-  justify-content: flex-start;
-  align-items:center;
-  background-image:url("../img/icon-phone.svg");
-  background-repeat:no-repeat;
-  background-position: center left;
   padding-left: 40px;
   padding-top: 13px;
   padding-bottom: 11px;
   border: 3px solid white;
+  flex-basis: 270px;
+  position: relative;
 }
-/*просмотреть и поправить если нужно, 
-сделать флексам только ссылки */
+
+.phone::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image:url("../img/icon-phone.svg");
+  background-repeat:no-repeat;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.contacts span {
+  display: block;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .header-info .account {
   display:flex;
-  flex-direction: row;
-  justify-content:flex-start;
-  align-items:center;
-    
+  flex-direction:column;
+  border: 1px solid red;
+  
+  position: relative;
+  background-color: white;
+   
 }
 /*добавить нормально картинки svg*/
-.account {
+/*.account a {
+  display: flex;
+  padding-left: 40px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
   width: 300px;
+  position: relative;
+
+  /*width: 300px;
   background-color: #ffffff;
   background-image:url("../img/icon-user.svg");
   background-repeat:no-repeat;
@@ -659,9 +706,12 @@ background-position: center right;*/
 
 }
 /*прописать стили для каталога в хедере*/
-.information {
-width: 210px;
 
+.information {
+  display: flex;
+ 
+  width: 210px;
+  
 }
 /**.point или сделать списком? {
 width: 5px;
@@ -678,38 +728,52 @@ border-radius: 50px;
   padding-right: 10px;
 }*точка*/
 
-.header-info .modal-login {
+.modal-login {
   display:flex;
-  justify-content: flex-start;
-  padding-left: 44px;
-  padding-top: 5px;
+  width: 300px;
+}
+.modal-login a {
+ display: block;
+ padding-bottom: 13px;
+ padding-top: 12px;
 }
 
 .modal-login .login {
-  background: url("../img/icon-login.svg"); 
+  position: relative;
+  background-color: white;
+  padding-left: 40px;
+  width: 121px;
+  margin-right: 10px;
+     
+}
+
+.login::before {
   background-repeat:no-repeat;
   background-position: left center;
-  padding-left: 40px;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  background-color: white;
-  width: 100px;
-  margin-right: 10px;
+  background: url("../img/icon-login.svg");
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 20px;
+  height: 17px;
+}
+/*фокус и наведение на иконку сделать*/
+.login::before :focus {
+  /*opacity: 0.5;*/
 }
 
 .modal-login .registration {
   background-color: white;
-  width: 130px;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  width: 150px;
   padding-left: 20px;
-  
-}
+  }
 
 .main-navigator {
   display:flex;
   flex-direction:row;
   justify-content:center;
+  padding-top: 44px;
 }
 
 .main-navigator .site-navigation {
@@ -866,10 +930,179 @@ border-radius: 50px;
   padding-left: 60px;
 }
 
-.popup {
+/*.modal {
   display: none;
+}*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+.modal .modal-letter {
+ /* width: 620px;
+  height: 331px;
+  */
+}
 
+.modal {
+  position: fixed;
+  color: #000000;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  box-shadow: 0 20px 40px 0 #000101, 0 -7px 0 0 #ee3643;
+}
 
+.modal-letter {
+  /*width: 460px;
+  height: 332px;
+  padding: 50px 80px;*/
+  top: 20%;
+  left: 42%;
+  margin-left: -230px;
+}
+.modal .popup-up-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width:465px;
+  height:332px;
+ 
+  margin: 50px auto;
+  margin-bottom:0px;
+}
 
+.modal-close {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  background-image: url("../img/icon-close.svg");
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  top: 10px;
+  left: 2px;
+}*/
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal .popup-name {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.contact-email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:620px;
+}
+.popup-name-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.popup-name-wrap label {
+  padding-bottom: 13px;
+  width: 220px;
+}
+
+.popup-name-wrap input {
+  width: 210px;
+  height: 38px;
+  border: 2px solid #dee3e4;
+  padding-left: 10px;
+}
+
+.email-wrap {
+  display: flex;
+  flex-direction: column;
+  }
+
+.email-wrap label {
+  padding-bottom: 13px;
+  width: 220px;
+}
+
+.email-wrap input {
+  width: 210px;
+  height: 38px;
+  border: 2px solid #dee3e4;
+  padding-left: 10px;
+}
+
+.comment-wrap {
+  display: flex;
+  flex-direction: column;
+  }
+
+.comment-wrap label {
+  padding-bottom: 16px;
+  padding-top: 20px;
+  width: 96px;
+}
+
+.comment-wrap textarea {
+  width: 438px;
+  height: 114px;
+  border: 2px solid #dee3e4;
+  padding-left: 16px;
+  
+}
+.button-popup-wrap {
+  width:620px;
+  height:112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f4f4f4;
+}
+
+.button-popup-wrap button {
+  width: 460px;
+  height: 38px;
+  background-color: #ee3643;
+  
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+   
+}
