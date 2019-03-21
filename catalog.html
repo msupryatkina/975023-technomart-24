@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="body-container">
   <header class="page-header">
     <div class="page-header-top">
       <div class="container">
@@ -35,10 +36,14 @@
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="account">
-          <a class="account" href="account.html">Равшан Джамшутович</a>
-        <div class="information">
+          <div class="insaide">
+            <a class="account" href="account.html">Равшан Джамшутович</a>
+          </div>
+          <div class="information">
             <a class="my-orders" href="my-orders.html">Мои заказы</a>
-            <span class="point"></span>
+            <svg class="point">
+              <circle r="10" cx="50%" cy="50%" fill="#32425c" />
+            </svg>
             <a class="personal-area" href="personal-area.html">Личный кабинет</a>
           </div>
         </div>
@@ -292,12 +297,32 @@
     </div>
   </footer>
 
-  <div class="popup-cart visually-hidden">
-    <span>Товар добавлен в корзину</span>
-    <a class="popup-cart" href="#">Оформить заказ</a>
-    <a class="popup-cart" href="#">Продолжить покупкки</a>
+  <div class="popup-cart-wrap">
+    <div class="goods-basket">Товар добавлен в корзину</div>
+    <div class="popup-cart-checkout">
+      <a class="popup-cart" href="#">Оформить заказ</a>
+      <a class="popup-cart" href="#">Продолжить покупкки</a>
+    </div>
+  </div>
+  <div class="modal-close">
+    <button class="modal-close" type="button">Закрыть</button>
   </div>
 
+  <div class="modal modal-letter catalog">      
+        <div class="popup-up-wrap">          
+            <img src="img/form-1.svg" class="yes_img">
+            <div class="goods-basket">Товар добавлен в корзину!</div>    
+        </div>
+        <div class="button-popup-wrap">
+          <button class="popup-order" type="submit">Оформить заказ</button>
+          <button class="popup-continue" type="submit">Продолжить покупки</button>
+        </div>
+      
+      <button class="modal-close" type="button">Закрыть</button>
+  </div>
+    
+
+</div>
 </body>
 
 </html>

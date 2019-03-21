@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="body-container">
   <header class="page-header">
     <div class="page-header-top">
       <div class="container">
@@ -113,11 +114,13 @@
         <div class="footer-social">
           <p>2010-2017 Компания Техномарт
             <br>Все права защищены</p>
-          <ul class="footer-social">
-            <il><a class="social-button" href="#">Вконтакте</a></il>
-            <il><a class="social-button" href="#">Фейсбук</a></il>
-            <il><a class="social-button" href="#">Инстаграм</a></il>
-          </ul>
+          <div class="social button">
+            <ul class="footer-social">
+              <li><a class="social-button-vk" href="#">a</a></li>
+              <li><a class="social-button-fb" href="#">b</a></li>
+              <li><a class="social-button-inst" href="#">c</a></li>
+            </ul>
+          </div>
         </div>
         <div class="footer-copyright">
           <p>
@@ -137,28 +140,27 @@
   <div class="modal modal-letter">
     <form class="contact-email" method="POST" action="https://echo.htmlacademy.ru">
       <div class="popup-up-wrap">
-      <div class="popup-name-wrap">
-        <label for="popup-name">Ваше имя:</label>
-        <input type="text" name="popup-name" id="popup-name" placeholder="Имя Фамилия">
+        <div class="popup-name-wrap">
+          <label for="popup-name">Ваше имя:</label>
+          <input type="text" name="popup-name" id="popup-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="email-wrap">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+        <div class="comment-wrap">
+          <label for="comment">Текст письма:</label>
+          <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+        </div>
       </div>
-      <div class="email-wrap">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-      </div>
-      <div class="comment-wrap">
-        <label for="comment">Текст письма:</label>
-        <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
-      </div>
-    </div>
       <div class="button-popup-wrap">
         <button type="submit">Отправить</button>
       </div>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </div>
-
   <div class="popup map visually-hidden">map</div>
-
+  </div>
 </body>
 
 </html>
