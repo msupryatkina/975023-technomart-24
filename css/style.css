@@ -296,6 +296,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  text-align:left;
 }
 
 .footer-copyright b {
@@ -928,8 +929,16 @@ a {
   min-height: 107px;
 }
 
+.footer-bottom .container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between
+}
 .footer-social {
-  width: 145px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-grow:2;
   
   text-align: center;
 }
@@ -941,14 +950,24 @@ a {
   width: 141px;
   list-style: none;
 }
+.footer-social >li{
+  display:block;
+  line-height:50px;
+  
+  background-color:#212a3a;
+  height: 40px;
+  width:40px;
+  border-radius: 50%;
+  
+
+}
 
 .social-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 43px;
-  height: 43px;
-  background-color:#212a3a;
+  
+
 
 }
 
@@ -971,17 +990,18 @@ a {
   height: 43px;
   background-color:#212a3a;
   
-}
+}*/
+
 .footer-copyright {
   display: flex;
   justify-content: space-between;
-  padding-top: 34px;
+  
   margin-right: 10px;
   margin-left: 10px;
-  width: 300px;
-  padding-left: 60px;
+  width: 350px;
+  padding-left: 100px;
 }
-*/
+
 
 
 .visually-hidden:not(:focus):not(:active),
@@ -1517,6 +1537,8 @@ div .section {
   justify-content:flex-start;
   margin-top:85px;
   margin-bottom:68px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 .slider-service{
@@ -1591,7 +1613,7 @@ div .section {
   width:400px;
   flex-grow:2;
   box-shadow: -20px 0px 15px -22px #000000;
-  background: url("../img/car-blue.png") no-repeat right bottom;
+  background: url("../img/car-blue.png") no-repeat right top;
   
   
 }
@@ -1614,8 +1636,10 @@ div .section {
 
 }
 
-}
+.hide {
+  display: none;
 
+}
 /*---------------------------*/
 /*=========End content-service main page ===========*/
 /*---------------------------*/
