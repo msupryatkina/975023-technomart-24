@@ -778,6 +778,7 @@ a {
   flex-direction:row;
   justify-content:center;
   padding-top: 44px;
+  padding-bottom:69px;
 }
 
 .main-navigator .site-navigation {
@@ -807,16 +808,25 @@ a {
    
 }
 
-
+.delivery-company {
+  width: 500px;
+  height: 150px; 
+  
+}
+.delivery li {
+  position: relative;
+  line-height:30px;
+  
+}
 .delivery li::before {
-  /*
+  top: 13px;
+  left: -30px;
   content: '';
   width: 25px;
   height: 2px;
   background: #FB565A;
-  position: absolute;
-  */
-  }
+  position: absolute;  
+}
 
 .company-info {
   width:220px; 
@@ -917,6 +927,36 @@ a {
   background-color: #293449;
   min-height: 107px;
 }
+
+.footer-social {
+  width: 145px;
+  
+  text-align: center;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background-color:#212a3a;
+
+}
+
+
+
+
+
+/*
 .footer-social {
   margin: 0;
   display: flex;
@@ -926,6 +966,10 @@ a {
 
 .footer-social ul{
   list-style:none;
+  display: flex;
+  width: 43px;
+  height: 43px;
+  background-color:#212a3a;
   
 }
 .footer-copyright {
@@ -937,23 +981,9 @@ a {
   width: 300px;
   padding-left: 60px;
 }
-/*.social-button {
- display: flex;
-}
-.social-button-vk, .ocial-button-fb, .social-button-inst {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  text-decoration: none;
-  background: #212a3a;
-  border-radius: 50px;
-} */
-/*
-.modal {
-  display: none;
-}*/
+*/
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -975,8 +1005,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
   background-position: 0 0;
-  
   box-shadow: 0 20px 40px 0 #000101, 0 -7px 0 0 #ee3643;
+
+ display: none;
 }
 
 .modal-letter {
@@ -1107,35 +1138,33 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 3px;
 }
-/*===========Catalog popup============*/
+
 .catalog .popup-up-wrap {
   display: flex;
   justify-content:center;
   align-items:center;
   width:620px;
   height: 120px;
- 
   margin: 0px auto;
   margin-bottom:0px;
 }
 
 .popup-up-wrap .goods-basket{
-   
-    font-family: Cuprum;
-    font-size: 30px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000; 
-    margin-left:32px;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000; 
+  margin-left:32px;
+
 }
 
 .button-popup-wrap .popup-order {
   width: 220px;
-  
 }
 
 .button-popup-wrap .popup-continue{
@@ -1145,3 +1174,448 @@ input[type="radio"].visually-hidden {
   margin-left:20px;
 }
 
+.modal-map {
+  top: 50%;
+  left: 50%;  
+  width: 940px;
+  height: 446px;
+  margin-top: -280px;
+  margin-left: -390px;
+  box-shadow: 0 20px 40px 0 #000101;
+
+  display: none;
+}
+
+.modal-map p {
+  margin: 0;
+}
+
+
+/*---------------------------*/
+/*=========Catalog===========*/
+/*---------------------------*/
+.main-container {
+  margin:auto;
+  width:940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display:flex;
+  flex-direction:column;
+}
+
+.main-container .category {
+  display:flex;
+  flex-direction:column;
+  margin-top:59px;
+  min-width:940px;
+
+}
+
+.yellow {
+  background-color:#ffbf47;
+}
+
+.blue {
+  background-color:#3bbce3;
+}
+
+.purple {
+  background-color:#dc91d8;
+}
+
+.green {
+  background-color:#8ed78f;
+}
+
+.category-row{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:940px;
+
+}
+
+.category-item {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom:20px;
+  width: 300px;
+  height: 123px;
+}
+
+.category-item .item-name {
+    font-family: Cuprum;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;  
+    margin-left:25px;
+    margin-top:26px;
+}
+.category-item .item-link{
+  display: block;
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+  font-family: "Cuprum","Arial Narrow",sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;  
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.1);
+  margin-left:25px;
+  margin-top: 15px;  
+}
+
+.category-item .item-icon {
+  
+  width: 78px;
+  height: 100%;     
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.category-item .materials {
+  background-image: url("../img/icon-1.svg");
+ 
+}
+
+.category-item .drill {
+  background-image: url("../img/icon-2.svg");
+}
+.category-item .traktor {
+  background-image: url("../img/icon-3.svg");
+}
+
+.category-item .cart {
+  background-image: url("../img/icon-4.svg");
+}
+.category-item .car {
+  background-image: url("../img/icon-5.svg");
+}
+
+.category-slider {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  position:relative;
+  width:620px;
+  height: 266px;
+}
+
+.category-slider .slider-img1 {
+  position:absolute;
+  width:620px;
+  height: 266px;
+  z-index:-1;
+  background-image: url("../img/layer-99.jpg");
+
+}
+.category-slider .slider-arrows {
+  display:flex;
+  justify-content:space-between;
+}
+.slider-name .title{
+
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-left:24px;
+  margin-top:27px;
+  margin-bottom:0px;
+}
+
+.slider-name .descripion {
+
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-left:24px;
+  margin-top:8px;
+
+}
+.slider-arrows {
+  font-family: Cuprum;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-left:24px;
+  margin-right:24px;
+}
+.slider-link {
+  display: block;
+  width: 195px;
+  height: 38px;
+  
+  font-size: 14px;
+  line-height: 38px;
+  font-family: "Cuprum","Arial Narrow",sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;  
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background-color: #ee3643;
+  margin-left:24px;
+  margin-top: 45px;  
+}
+
+
+/*---------------------------*/
+/*=========END Catalog===========*/
+/*---------------------------*/
+
+/*---------------------------*/
+/*=========Start Section ===========*/
+/*---------------------------*/
+div .section {
+  width:940px;
+  height:89px;
+  background-color: #f9f5f0;
+  display:flex;
+  justify-content:space-between;
+  
+}
+.section .title{
+  
+  height: 21px;
+  margin-left:30px;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+}
+
+.section .btn{
+  display: block;
+  width: 195px;
+  height: 38px;
+  
+  font-size: 14px;
+  line-height: 38px;
+  font-family: "Cuprum","Arial Narrow",sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;  
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background-color: #ee3643;
+  margin-top:25px;
+  margin-right:25px;
+}
+
+
+/*---------------------------*/
+/*=========End Section ===========*/
+/*---------------------------*/
+
+
+/*---------------------------*/
+/*=========Start Catalog main page ===========*/
+/*---------------------------*/
+
+.catalog-list-main{
+  padding-left:0px;
+  display:flex;
+  justify-content:space-between;
+  
+}
+
+
+
+.catalog-list-main .catalog-item {
+  margin-right:0px;
+}
+
+/*---------------------------*/
+/*=========End Catalog main page ===========*/
+/*---------------------------*/
+
+
+/*---------------------------*/
+/*=========Start Manufactures main page ===========*/
+/*---------------------------*/
+ .manufactures {
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  width:940px;
+  padding:0px;
+}
+
+.manufactures .row {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.manufactures li {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 220px;
+  height: 145px;
+  margin-bottom:20px;
+  border: solid 1px #eaeaea;
+
+}
+/*---------------------------*/
+/*=========End Manufactures main page ===========*/
+/*---------------------------*/
+
+/*---------------------------*/
+/*=========Start content-service main page ===========*/
+/*---------------------------*/
+
+
+.content-service {
+  background-color:#f4f7f9;
+}
+
+.content-service .container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  margin-top:85px;
+  margin-bottom:68px;
+}
+
+.slider-service{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  height:279px;
+  
+}
+
+.slider-service .slider-menu {
+  list-style:none;
+  padding:0px;  
+  
+  
+}
+
+.content-service .container h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  color:black;
+}
+
+
+.content-service .container p {
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin:0px;
+}
+
+
+
+
+
+.slider-menu li{
+  display:block;
+  line-height: 61px;
+  text-align:left;
+  padding-left:22px;
+  width: 240px;
+  height: 61px;
+  dbox-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  border-bottom: 2px solid #405069 ;
+
+  background-color: #32425c;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  
+  letter-spacing: normal;
+  color: #fff;
+}
+.slider-menu .selected {
+  fbox-shadow: 0px 1px 0 0 #fffff, inset 0px 1px 0 0 #fffff;
+  background-color: #ffffff;
+  color:#32425c;
+}
+
+.slider-service .description {
+  padding-left:80px;
+  height:279px;
+  width:400px;
+  flex-grow:2;
+  box-shadow: -20px 0px 15px -22px #000000;
+  background: url("../img/car-blue.png") no-repeat right bottom;
+  
+  
+}
+.slider-service .description h2 {
+  font-family: Cuprum;
+  font-size: 36px;
+  line-height: 1;
+  color: #32425c;
+}
+.slider-service .description .text {
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
+}
+
+}
+
+/*---------------------------*/
+/*=========End content-service main page ===========*/
+/*---------------------------*/
