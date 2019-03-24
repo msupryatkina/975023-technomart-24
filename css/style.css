@@ -311,6 +311,11 @@ a {
   color:#ffd180;
 }
 
+.filter{
+  width:220px;
+  margin-right:15px;
+}
+
 .filter fieldset {
   border: none;
 }
@@ -321,6 +326,8 @@ a {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top:25px;
+  
 }
 
 .filter ul {
@@ -341,8 +348,210 @@ a {
   opacity: 0.5;
 }
 
+.filter-top {
+  
+  font-size: 13px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 202px;
+  height: 38px;
+  background-color: #f7f3ec;
+  
+  display: block;
+  padding-left: 18px;
+  margin-bottom:25px;
+   
+}
+
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width:220px;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 25px;
+}
+
+.range-filter hr {
+  width:90%;
+  background-color:
+  height:2px;
+ 
+
+}
+ .line{
+  height:2px;
+  width:100%;
+  background-color:#f7f3ec;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.filter-item legend {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f7f3ec;
+}
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+
+.price-controls {
+  font-size: 0;
+  display:flex;
+  justify-content:space-between;
+}
+.price-controls label {
+  display: inline-block;
+  width: 45%;
+  font-size: 17px;
+}
+
+.price-controls input {
+  display:block;
+  line-height:37px;
+  font-family: "PTSans" ,"Arial", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+  
+
+}
+
+.sort {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:auto;
+  height:38px;
+  background-color:#f7f3ec;
+  
+  padding-left:10px;
+
+}
+
+.sort img{
+  width: 11px;
+  height: 10px;
+  margin:5px;
+  margin-right:10px;
+
+}
+span.label{
+  opacity: 0.3;
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform:uppercase;
+}
+
+.text-sort {
+  width:240px;
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  opacity:1;
+  
+}
+.sort .label {
+  
+}
+
+ul.pages {
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  padding:0px;
+  
+}
+ul.pages > li{
+  display:block;
+  line-height:38px;
+  width:auto;
+  height:38px;
+  
+  align-items:center;
+  text-align:center;
+  padding-right:16px;
+  padding-left:16px;
+
+  margin:5px;
+  border:1px solid black;
+  text-transform:uppercase
+}
+
+
+
 .catalog-list {
   list-style: none;
+  padding:0px;
 }
 
 .catalog a {
@@ -359,7 +568,7 @@ a {
   position: relative;
   display: inline-block;
   width: 218px;
-  margin-right: 20px;
+  margin-right: 18px;
   margin-bottom: 20px;
   font-weight: bold;
   line-height: 20px;
@@ -847,8 +1056,11 @@ a {
 .container-catalog {
     margin: auto;
     width: 940px;
-    padding-left: 10px;
-    padding-right: 10px;
+ 
+}
+
+.container-catalog .container{
+  padding:0px;
 }
 .breadcrumbs {
   display: flex;
@@ -981,10 +1193,9 @@ a {
 
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+/*input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden*/ {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -1472,7 +1683,7 @@ div .section {
   background-color:#f4f7f9;
 }
 
-.content-service .container {
+.content-service .container{
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
@@ -1480,6 +1691,10 @@ div .section {
   margin-bottom:68px;
   padding-top:30px;
   padding-bottom:30px;
+}
+.container s.catalog-reset {
+  margin-top:0px;
+  margin-bottom:0px;
 }
 
 .slider-service{
