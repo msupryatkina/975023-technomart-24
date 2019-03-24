@@ -967,30 +967,7 @@ a {
   align-items: center;
   justify-content: center;
   
-
-
 }
-
-
-
-
-
-/*
-.footer-social {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 34px;
-}
-
-.footer-social ul{
-  list-style:none;
-  display: flex;
-  width: 43px;
-  height: 43px;
-  background-color:#212a3a;
-  
-}*/
 
 .footer-copyright {
   display: flex;
@@ -1001,7 +978,6 @@ a {
   width: 350px;
   padding-left: 100px;
 }
-
 
 
 .visually-hidden:not(:focus):not(:active),
@@ -1211,9 +1187,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/*---------------------------*/
-/*=========Catalog===========*/
-/*---------------------------*/
 .main-container {
   margin:auto;
   width:940px;
@@ -1411,13 +1384,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/*---------------------------*/
-/*=========END Catalog===========*/
-/*---------------------------*/
-
-/*---------------------------*/
-/*=========Start Section ===========*/
-/*---------------------------*/
 div .section {
   width:940px;
   height:89px;
@@ -1463,15 +1429,6 @@ div .section {
 }
 
 
-/*---------------------------*/
-/*=========End Section ===========*/
-/*---------------------------*/
-
-
-/*---------------------------*/
-/*=========Start Catalog main page ===========*/
-/*---------------------------*/
-
 .catalog-list-main{
   padding-left:0px;
   display:flex;
@@ -1480,19 +1437,11 @@ div .section {
 }
 
 
-
 .catalog-list-main .catalog-item {
   margin-right:0px;
 }
 
-/*---------------------------*/
-/*=========End Catalog main page ===========*/
-/*---------------------------*/
 
-
-/*---------------------------*/
-/*=========Start Manufactures main page ===========*/
-/*---------------------------*/
  .manufactures {
   list-style:none;
   display:flex;
@@ -1518,14 +1467,6 @@ div .section {
   border: solid 1px #eaeaea;
 
 }
-/*---------------------------*/
-/*=========End Manufactures main page ===========*/
-/*---------------------------*/
-
-/*---------------------------*/
-/*=========Start content-service main page ===========*/
-/*---------------------------*/
-
 
 .content-service {
   background-color:#f4f7f9;
@@ -1576,10 +1517,6 @@ div .section {
   color: #000000;
   margin:0px;
 }
-
-
-
-
 
 .slider-menu li{
   display:block;
@@ -1640,6 +1577,3 @@ div .section {
   display: none;
 
 }
-/*---------------------------*/
-/*=========End content-service main page ===========*/
-/*---------------------------*/
